@@ -1,4 +1,4 @@
-# library
+# Library
 Library Web Application to improve web app development skills
 
 To create a superuser (useful to access admin panel to add new books or see books directly)
