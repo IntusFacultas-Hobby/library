@@ -38,5 +38,5 @@ class Book(models.Model):
             "author": self.author,
             "description": self.description,
             "picture": self.picture.url,
-            "datePublished": self.date_published.format("%Y-%m-%d")
+            "datePublished": self.date_published.strftime("%Y-%m-%d")
         }
