@@ -9,6 +9,8 @@ class Book(models.Model):
     description = models.CharField("Description", max_length=1024)
     picture = models.ImageField("Image")
     date_published = models.DateField("Date Published")
+    date_checked_out = models.DateField("Date Checked Out")
+    checked_out = models.BooleanField("Checked Out", default=False)
 
     def __str__(self):
         """ Returns Book Title and Author

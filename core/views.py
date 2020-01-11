@@ -160,5 +160,6 @@ class Storefront(View):
 class Details(View):
     """ Serves the Book Details page
     """
+
     def get(self, request, pk):
         return render(request, "core/details.html", {"pk": pk})

@@ -1,5 +1,6 @@
 from django.urls import path, include
 from core.views import BookDetails, BookList, Storefront, Details
+
 app_name = "core"
 
 urlpatterns = [
