@@ -32,6 +32,8 @@ class Book(models.Model):
             "description": String,
             "picture": String,
             "datePublished": DateString (YYYY-MM-DD)
+            "checkedOut": Boolean,
+            "dateCheckedOut": DateString (YYYY-MM-DD)
         }
         """
         return {
@@ -40,5 +42,7 @@ class Book(models.Model):
             "author": self.author,
             "description": self.description,
             "picture": self.picture.url,
-            "datePublished": self.date_published.strftime("%Y-%m-%d")
+            "datePublished": self.date_published.strftime("%Y-%m-%d"),
+            "checkedOut": self.checked_out,
+            "dateCheckedOut": self.date_checked_out.strftime("%Y-%m-%d")
         }
